@@ -10,6 +10,7 @@ import Vuetify from 'vuetify'
 
 import Routes from './routes.js';
 import App from './views/App.vue';
+import Store from './stores/'
 
 Vue.config.productionTip = false
 Vue.use(Vuetify)
@@ -24,6 +25,7 @@ const app = new Vue({
     el: '#app',
     router: Routes,
     vuetify: new Vuetify(),
+    store: Store,
     render: h => h(App),
 });
 
