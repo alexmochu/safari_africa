@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Book Safari Africa
+                    Operator
                 </div>
 
                 <div class="links">
