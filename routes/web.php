@@ -11,38 +11,41 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/{any}', 'SinglePageController@index'
+    )->where('any', '.*');
 
-Route::get('/safaris', function () {
-    return view('safaris');
-});
+// Route::get('/', function () {
+//     return view('app');
+// });
 
-Route::get('/safari', function () {
-    return view('safari');
-});
+// Route::get('/safaris', function () {
+//     return view('safaris');
+// });
 
-Route::get('/operators', function () {
-    return view('operators');
-});
+// Route::get('/safari', function () {
+//     return view('safari');
+// });
 
-Route::get('/operator', function () {
-    return view('operator');
-});
+// Route::get('/operators', function () {
+//     return view('operators');
+// });
 
-Route::get('/operators/join', function () {
-    return view('registration');
-});
+// Route::get('/operator', function () {
+//     return view('operator');
+// });
 
-Route::get('/destinaions', function () {
-    return view('destinations');
-});
+// Route::get('/operators/join', function () {
+//     return view('registration');
+// });
 
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/destinaions', function () {
+//     return view('destinations');
+// });
 
-Route::get('/signup', function () {
-    return view('signup');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
+
+// Route::get('/signup', function () {
+//     return view('signup');
+// });
