@@ -7,6 +7,8 @@
 import './bootstrap';
 import Vue from 'vue';
 import Vuetify from 'vuetify'
+import VueAxios from 'vue-axios';
+import axios from 'axios';
 
 import Routes from './routes.js';
 import App from './views/App.vue';
@@ -14,6 +16,7 @@ import Store from './stores/'
 
 Vue.config.productionTip = false
 Vue.use(Vuetify)
+Vue.use(VueAxios, axios);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
