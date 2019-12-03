@@ -33,6 +33,7 @@
                 </div>
             </form>
         </div>
+        <subscribe-component></subscribe-component>
         <footer-bar></footer-bar>
         <copyright-footer></copyright-footer>
     </v-content>
@@ -42,13 +43,15 @@
 import NavBar from '../layouts/NavBar';
 import FooterBar from '../layouts/Footer';
 import CopyrightFooter from '../layouts/CopyrightFooter'
+import SubscribeComponent from '../layouts/SubscribeComponent'
 
 export default {
     name: 'home',
     components: {
         NavBar,
         FooterBar,
-        CopyrightFooter
+        CopyrightFooter,
+        SubscribeComponent
     },
     data() {
         return {
