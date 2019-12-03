@@ -1,5 +1,5 @@
 <template>
-  <v-footer>
+  <v-footer color="#E2DDDD">
     <v-container grid-list-lg>
       <v-layout row justify-center wrap>
         <v-flex xs12 sm12 md6>

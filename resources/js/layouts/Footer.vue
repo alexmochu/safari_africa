@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="white">
+  <v-div>
     <v-container grid-list-lg>
       <v-layout row wrap>
         <v-flex xs12 sm12 md4>
@@ -46,7 +46,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-  </v-footer>
+  </v-div>
 </template>
 
 <script>

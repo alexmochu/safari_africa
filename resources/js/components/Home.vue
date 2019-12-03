@@ -7,6 +7,8 @@
                 <div class="display-1 font-weight-bold white--text text-xs-center">Book incredible safaris around africa</div>
             </v-layout>
         </v-img>
+        <stats-bar></stats-bar>
+        <v-divider></v-divider>
         <div>
             <h1>Home</h1>
             <h4>Create A Safari</h4>
@@ -35,6 +37,7 @@
         </div>
         <subscribe-component></subscribe-component>
         <footer-bar></footer-bar>
+        <v-divider></v-divider>
         <copyright-footer></copyright-footer>
     </v-content>
 </template>
@@ -44,6 +47,7 @@ import NavBar from '../layouts/NavBar';
 import FooterBar from '../layouts/Footer';
 import CopyrightFooter from '../layouts/CopyrightFooter'
 import SubscribeComponent from '../layouts/SubscribeComponent'
+import StatsBar from '../layouts/StatsBar';
 
 export default {
     name: 'home',
@@ -51,7 +55,8 @@ export default {
         NavBar,
         FooterBar,
         CopyrightFooter,
-        SubscribeComponent
+        SubscribeComponent,
+        StatsBar
     },
     data() {
         return {
