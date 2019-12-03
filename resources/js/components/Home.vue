@@ -1,9 +1,7 @@
 <template>
     <v-content>
-        <span>
-            <nav-bar></nav-bar>
-        </span>
-        <v-img class="home-hero" max-height="700">
+        <nav-bar></nav-bar>
+        <v-img class="home-hero" max-height="600">
             <v-layout class="header-text" justify-center align-center column pa-5>
                 <div class="display-4 font-weight-black white--text text-xs-center">Find Your Perfect Safari</div>
                 <div class="display-1 font-weight-bold white--text text-xs-center">Book incredible safaris around africa</div>
@@ -35,16 +33,22 @@
                 </div>
             </form>
         </div>
+        <footer-bar></footer-bar>
+        <copyright-footer></copyright-footer>
     </v-content>
 </template>
 
 <script>
 import NavBar from '../layouts/NavBar';
+import FooterBar from '../layouts/Footer';
+import CopyrightFooter from '../layouts/CopyrightFooter'
 
 export default {
     name: 'home',
     components: {
-        NavBar
+        NavBar,
+        FooterBar,
+        CopyrightFooter
     },
     data() {
         return {
